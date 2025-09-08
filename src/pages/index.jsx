@@ -7,7 +7,8 @@ import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import Footer from "@/components/Footer";
 import LeadForm from "@/components/LeadForm";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Calendar } from "lucide-react";
+import Button from "@/components/Button";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 16 },
@@ -34,42 +35,34 @@ export default function HomePage() {
         <HeroSection />
       </motion.section>
 
-      {/* Calendly Booking Section */}
+      {/* Calendly Booking Section (subtle banner) */}
       <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        className="py-16"
+        className="py-12"
         id="book-a-call"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
-              Schedule a Call With Us
-            </h2>
-            <p className="mt-3 text-base text-gray-600 dark:text-gray-300">
-              Pick a time that works best for you.
-            </p>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5 }}
-            className="mt-8 rounded-2xl bg-white p-4 shadow-md dark:bg-gray-900 sm:p-6"
-          >
-            <div className="relative w-full overflow-hidden rounded-xl">
-              <iframe
-                src="https://calendly.com/your-calendly-link"
-                width="100%"
-                height="600"
-                frameBorder="0"
-                title="Calendly Scheduling Widget"
-              />
+          <div className="mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-violet-200/40 bg-gradient-to-r from-[#8B5CF6]/10 via-transparent to-transparent p-4 shadow-sm backdrop-blur-md dark:border-violet-400/20 dark:from-[#8B5CF6]/15">
+            <div className="flex flex-col items-start gap-4 p-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-3">
+                <div className="mt-0.5 rounded-full bg-[#8B5CF6]/15 p-2 text-[#8B5CF6]">
+                  <Calendar className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900 dark:text-white">Book a quick call</h3>
+                  <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Pick a time that works for you. Opens in a new tab.</p>
+                </div>
+              </div>
+              <div className="shrink-0">
+                <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener noreferrer">
+                  <Button text="Open Calendly" variant="primary" ariaLabel="Open Calendly" className="hover:scale-105 active:scale-95" />
+                </a>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </motion.section>
 
