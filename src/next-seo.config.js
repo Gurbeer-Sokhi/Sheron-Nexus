@@ -12,7 +12,7 @@ export default {
       "We help businesses hire top offshore talent and build custom tech solutions efficiently and reliably.",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/vercel.svg",
         width: 1200,
         height: 630,
         alt: "Sheron Nexus OG Image",

@@ -96,7 +96,7 @@ export default function ServicesPage() {
                 className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg"
               >
                 <Image
-                  src="/images/hiring.jpg"
+                  src="/vercel.svg"
                   alt="Offshore hiring"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                 className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg"
               >
                 <Image
-                  src="/images/tech.jpg"
+                  src="/window.svg"
                   alt="Tech solutions"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"

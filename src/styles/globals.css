@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Base element defaults */
+* {
+  box-sizing: border-box;
+}
+html { scroll-behavior: smooth; }
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Force dark mode visibility - override any conflicting styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #111827 !important; /* gray-900 */
+  color: #f9fafb !important; /* zinc-50 */
+}
+
+.dark .min-h-screen {
+  background-color: #111827 !important; /* gray-900 */
+}
+
+.dark .bg-white {
+  background-color: #1f2937 !important; /* gray-800 */
+}
+
+.dark .text-gray-900 {
+  color: #f9fafb !important; /* white */
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db !important; /* gray-300 */
+}
+
+.dark .text-gray-700 {
+  color: #d1d5db !important; /* gray-300 */
+}

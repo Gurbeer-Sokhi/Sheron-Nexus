@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import ThemeToggle from "@/components/ThemeToggle";
+// import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,15 +42,15 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="flex items-center gap-3">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Link
-              href="/contact"
+              href="/#contact"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white dark:focus:ring-gray-600"
             >
               Contact Us
             </Link>
             <Link
-              href="/book"
+              href="https://calendly.com/your-calendly-link"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#8B5CF6] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/50"
             >
               Book a Call
@@ -114,14 +114,14 @@ export default function Navbar() {
           </ul>
           <div className="mt-2 flex flex-col gap-2">
             <Link
-              href="/contact"
+              href="/#contact"
               onClick={() => setIsOpen(false)}
               className="inline-flex items-center justify-center rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white dark:focus:ring-gray-600"
             >
               Contact Us
             </Link>
             <Link
-              href="/book"
+              href="https://calendly.com/your-calendly-link"
               onClick={() => setIsOpen(false)}
               className="inline-flex items-center justify-center rounded-full bg-[#8B5CF6] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/50"
             >

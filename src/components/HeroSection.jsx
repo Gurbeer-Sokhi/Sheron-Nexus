@@ -46,12 +46,12 @@ export default function HeroSection() {
             variants={buttonsVariants}
             className="flex flex-col items-center justify-center gap-3 sm:flex-row md:justify-start"
           >
-            <Link href="/book">
+            {/* <Link href="/book">
               <Button text="Book a Call" variant="primary" ariaLabel="Book a Call" />
             </Link>
             <Link href="/#contact">
               <Button text="Contact Us" variant="secondary" ariaLabel="Contact Us" />
-            </Link>
+            </Link> */}
           </motion.div>
         </motion.div>
 
@@ -65,7 +65,7 @@ export default function HeroSection() {
         >
           <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/hero.jpg"
+              src="/next.svg"
               alt="Team collaborating at Sheron Nexus"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"

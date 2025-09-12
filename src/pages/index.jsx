@@ -88,15 +88,20 @@ export default function HomePage() {
               <ul className="space-y-4 text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 (976450)-4590</span>
+                  <Phone className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
+                  <span>+1 (551)-235-2754</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
-                  <a href="mailto:hello@sheronnexus.com" className="hover:underline">hello@sheronnexus.com</a>
+                  <a href="mailto:rajbeer41@gmail.com" className="hover:underline">rajbeer41@gmail.com</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
                   <span>Atlanta, GA</span>
+                  <MapPin className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
+
+                  <span>Nagpur, Maharashtra</span>
                 </li>
               </ul>
             </div>
@@ -140,7 +145,7 @@ export default function HomePage() {
       </motion.section>
 
       {/* Impact / Testimonials Section */}
-      <motion.section
+      {/* <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -166,10 +171,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Trust Signals Section */}
-      <motion.section
+      {/* <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -190,7 +195,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <Footer />
     </div>

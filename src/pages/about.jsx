@@ -105,7 +105,7 @@ export default function AboutPage() {
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/about.jpg"
+                  src="/globe.svg"
                   alt="About Sheron Nexus"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"

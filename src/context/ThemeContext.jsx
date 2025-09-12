@@ -18,17 +18,24 @@ export function ThemeProvider({ children }) {
     setTheme(prefersDark ? "dark" : "light");
   }, []);
 
-  // Apply/remove class on <html> for Tailwind dark variant
+  // Apply/remove class on <html> and <body> for Tailwind dark variant
   useEffect(() => {
     if (typeof document === "undefined") return;
-    const root = document.documentElement;
-    if (theme === "dark") root.classList.add("dark");
-    else root.classList.remove("dark");
+    const htmlEl = document.documentElement;
+    const bodyEl = document.body;
+    if (theme === "dark") {
+      htmlEl.classList.add("dark");
+      bodyEl.classList.add("dark");
+    } else {
+      htmlEl.classList.remove("dark");
+      bodyEl.classList.remove("dark");
+    }
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
     setTheme((prev) => {
       const next = prev === "dark" ? "light" : "dark";
+      console.log(`Theme toggled from ${prev} to ${next}`);
       try {
         window.localStorage.setItem("theme", next);
       } catch {}
