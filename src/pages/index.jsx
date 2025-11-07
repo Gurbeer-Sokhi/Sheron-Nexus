@@ -57,7 +57,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="shrink-0">
-                <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/sheronnexus/30min" target="_blank" rel="noopener noreferrer">
                   <Button text="Open Calendly" variant="primary" ariaLabel="Open Calendly" className="hover:scale-105 active:scale-95" />
                 </a>
               </div>
