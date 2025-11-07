@@ -88,13 +88,13 @@ export default function HomePage() {
               <ul className="space-y-4 text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
-                  <span>+91 (976450)-4590</span>
+                  <a href="tel:+917558214964">+91 755-8214964</a>
                   <Phone className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
-                  <span>+1 (551)-235-2754</span>
+                  <a href="tel:+15512352754">+1 (551)-235-2754</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
-                  <a href="mailto:rajbeer41@gmail.com" className="hover:underline">rajbeer41@gmail.com</a>
+                  <a href="mailto:sheronnexus@outlook.com" className="hover:underline">sheronnexus@outlook.com</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-[#8B5CF6] transition-transform duration-200 hover:-translate-y-0.5" />
