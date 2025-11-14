@@ -26,9 +26,10 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <NextSeo
         title="About Sheron Nexus"
-        description="Learn about Sheron Nexus: our story, mission, and vision for empowering businesses."
+        description="Learn about Sheron Nexus: our mission, vision, and the values that drive our work."
         openGraph={{ url: "https://www.sheronnexus.com/about" }}
       />
+
       <Navbar />
 
       {/* Hero Section */}
@@ -43,8 +44,9 @@ export default function AboutPage() {
           <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
             About Sheron Nexus
           </h1>
+
           <p className="mx-auto mt-4 max-w-2xl text-base text-gray-600 sm:text-lg dark:text-gray-300">
-            Our story, mission, and vision.
+            Empowering businesses through global talent, technology, and operational excellence.
           </p>
         </div>
       </motion.section>
@@ -62,10 +64,11 @@ export default function AboutPage() {
             >
               <h2 className="text-xl font-bold text-gray-900 dark:text-white">Our Mission</h2>
               <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-                To empower businesses by connecting them with world-class offshore talent and delivering scalable tech
-                solutions.
+                To empower businesses by connecting them with world-class offshore talent
+                and delivering scalable technology solutions.
               </p>
             </motion.div>
+
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -75,46 +78,88 @@ export default function AboutPage() {
             >
               <h2 className="text-xl font-bold text-gray-900 dark:text-white">Our Vision</h2>
               <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-                To be the trusted global partner for companies seeking innovation, efficiency, and growth.
+                To be the trusted global partner for companies seeking innovation, efficiency,
+                and long-term growth.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Company Story */}
+      {/* Core Values */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <div className="rounded-2xl bg-white p-6 shadow-md dark:bg-gray-900">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Our Story</h2>
-                <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-                  Founded with a mission to bridge global talent and opportunity, Sheron Nexus partners with companies
-                  to build resilient teams and modern software. Our journey is driven by a passion for quality,
-                  collaboration, and long-term success. [Placeholder text]
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeIn}
+            className="text-center text-2xl font-bold text-gray-900 dark:text-white"
+          >
+            Our Core Values
+          </motion.h2>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Reliability",
+                desc: "We deliver consistent, dependable services that businesses can count on.",
+                icon: "/shield.svg",
+              },
+              {
+                title: "Transparency",
+                desc: "Clear communication, honest processes, and full visibility at every step.",
+                icon: "/eye.svg",
+              },
+              {
+                title: "Growth Mindset",
+                desc: "We constantly innovate and help our partners scale without limitations.",
+                icon: "/growth.svg",
+              },
+            ].map((value, index) => (
+              <motion.div
+                key={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={fadeIn}
+                className="rounded-2xl bg-white p-6 shadow-md dark:bg-gray-900"
+              >
+                <div className="mb-4 flex justify-center">
+                  <Image src={value.icon} alt={value.title} width={48} height={48} />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center">
+                  {value.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 text-center">
+                  {value.desc}
                 </p>
-              </div>
-            </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="order-1 flex justify-center md:order-2"
-            >
-              <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
-                <Image
-                  src="/globe.svg"
-                  alt="About Sheron Nexus"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  className="object-cover"
-                  priority={false}
-                />
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Founder’s Note */}
+      <section className="py-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeIn}
+            className="rounded-2xl bg-white p-8 shadow-md dark:bg-gray-900"
+          >
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Founder’s Note</h2>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+              Sheron Nexus was built with a simple goal: to make global hiring and technology
+              accessible to every business — no matter the size.  
+              <br /><br />
+              Our approach is straightforward: transparent processes, quality talent, and
+              technology that drives real results. We’re here to support teams, strengthen
+              operations, and help businesses grow with confidence.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -122,5 +167,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-
