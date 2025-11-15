@@ -61,6 +61,7 @@ export default function ServicesPage() {
           </h2>
 
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+            {/* Text Left */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -90,6 +91,7 @@ export default function ServicesPage() {
               </div>
             </motion.div>
 
+            {/* Image Right */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -98,12 +100,7 @@ export default function ServicesPage() {
               className="order-1 flex justify-center md:order-2"
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image
-                  src="/eor.svg"
-                  alt="Employer of Record Services"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/eor.svg" alt="Employer of Record Services" fill className="object-cover" />
               </div>
             </motion.div>
           </div>
@@ -120,60 +117,8 @@ export default function ServicesPage() {
           </h2>
 
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={slideRight}
-            className="flex justify-center"
-          >
-            <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-              <Image src="/hiring.svg" alt="Hiring Outsourcing" fill className="object-cover" />
-            </div>
-          </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={slideLeft}
-          >
-            <div className="card rounded-xl bg-white p-6 shadow-md dark:bg-gray-900">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Let us handle your hiring, end-to-end.
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-                From sourcing to screening, Sheron Nexus manages your entire recruitment pipeline.
-                We work as an extension of your HR team, ensuring fast, high-quality hiring across India.
-              </p>
-
-              <ul className="mt-4 space-y-2 text-sm text-gray-800 dark:text-gray-200">
-                <li>✓ Candidate sourcing & screening</li>
-                <li>✓ Interview coordination & evaluation</li>
-                <li>✓ Background checks & onboarding</li>
-                <li>✓ Flexible monthly or per-hire pricing</li>
-              </ul>
-
-              <p className="mt-4 text-sm text-purple-600 dark:text-purple-400 font-medium">
-                Ideal for: Teams scaling fast or without a dedicated hiring department.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-        </div>
-      </section>
-
-
-      {/* ============================== */}
-      {/* Tech Solutions */}
-      {/* ============================== */}
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
-            Tech Solutions
-          </h2>
-
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+            {/* Image Left */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -182,10 +127,54 @@ export default function ServicesPage() {
               className="flex justify-center"
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image src="/window.svg" alt="Tech Solutions" fill className="object-cover" />
+                <Image src="/hiring.svg" alt="Hiring Outsourcing" fill className="object-cover" />
               </div>
             </motion.div>
 
+            {/* Text Right */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={slideLeft}
+            >
+              <div className="card rounded-xl bg-white p-6 shadow-md dark:bg-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  Let us handle your hiring, end-to-end.
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+                  From sourcing to screening, Sheron Nexus manages your entire recruitment pipeline.
+                  We work as an extension of your HR team, ensuring fast, high-quality hiring across India.
+                </p>
+
+                <ul className="mt-4 space-y-2 text-sm text-gray-800 dark:text-gray-200">
+                  <li>✓ Candidate sourcing & screening</li>
+                  <li>✓ Interview coordination & evaluation</li>
+                  <li>✓ Background checks & onboarding</li>
+                  <li>✓ Flexible monthly or per-hire pricing</li>
+                </ul>
+
+                <p className="mt-4 text-sm text-purple-600 dark:text-purple-400 font-medium">
+                  Ideal for: Teams scaling fast or without a dedicated hiring department.
+                </p>
+              </div>
+            </motion.div>
+        </div>
+        </div>
+      </section>
+
+      {/* ============================== */}
+      {/* Tech Solutions (TEXT LEFT, IMAGE RIGHT) */}
+      {/* ============================== */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
+            Tech Solutions
+          </h2>
+
+          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+
+            {/* TEXT LEFT */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -213,20 +202,48 @@ export default function ServicesPage() {
                 </p>
               </div>
             </motion.div>
+
+            {/* IMAGE RIGHT */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={slideRight}
+              className="flex justify-center"
+            >
+              <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
+                <Image src="/window.svg" alt="Tech Solutions" fill className="object-cover" />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
-      
+
       {/* ============================== */}
-      {/* Customer Support Services */}
+      {/* Customer Support (IMAGE LEFT, TEXT RIGHT) */}
       {/* ============================== */}
-      {/* <section className="py-16">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
             Customer Support Services
           </h2>
 
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+
+            {/* IMAGE LEFT */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={slideRight}
+              className="flex justify-center"
+            >
+              <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
+                <Image src="/support.svg" alt="Customer Support Services" fill className="object-cover" />
+              </div>
+            </motion.div>
+
+            {/* TEXT RIGHT */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -237,6 +254,7 @@ export default function ServicesPage() {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Deliver exceptional support — without the overhead.
                 </h3>
+
                 <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
                   Sheron Nexus provides trained customer support teams for email, chat, and voice.
                   We help you deliver responsive, reliable, and brand-aligned support at scale.
@@ -251,30 +269,13 @@ export default function ServicesPage() {
                 </ul>
 
                 <p className="mt-4 text-sm text-purple-600 dark:text-purple-400 font-medium">
-                  Ideal for: Companies scaling support operations without expanding in-house teams.
+                  Ideal for: Companies scaling support operations without hiring full-time staff.
                 </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={slideRight}
-              className="flex justify-center"
-            >
-              <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image
-                  src="/support.svg"
-                  alt="Customer Support Services"
-                  fill
-                  className="object-cover"
-                />
               </div>
             </motion.div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="bg-[#8B5CF6] py-16 text-white">
