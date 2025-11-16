@@ -222,7 +222,7 @@ export default function ServicesPage() {
       {/* ============================== */}
       {/* Customer Support (IMAGE LEFT, TEXT RIGHT) */}
       {/* ============================== */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
             Customer Support Services
@@ -230,7 +230,6 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
 
-            {/* IMAGE LEFT */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -243,7 +242,6 @@ export default function ServicesPage() {
               </div>
             </motion.div>
 
-            {/* TEXT RIGHT */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -275,7 +273,7 @@ export default function ServicesPage() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-[#8B5CF6] py-16 text-white">
@@ -307,12 +305,9 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
               className="inline-flex"
             >
-              <Button
-                text="Book a Call"
-                variant="primary"
-                className="bg-white text-[#8B5CF6]"
-                ariaLabel="Book a Call"
-              />
+              <button className="border-white text-white hover:bg-white hover:text-black px-4 py-2">
+  Book a Call
+</button>
             </a>
           </motion.div>
         </div>
