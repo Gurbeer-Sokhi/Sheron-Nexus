@@ -23,7 +23,12 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
-          <Link href="/" className="select-none">
+          <Link href="/" className="select-none flex items-center gap-2">
+            <img
+              src="/sl.svg"
+              alt="Sheron Nexus logo"
+              className="h-8 w-8 object-contain"
+            />
             <span className="text-lg font-extrabold tracking-tight text-gray-900 dark:text-white">
               Sheron Nexus
             </span>

@@ -65,7 +65,7 @@ export default function HeroSection() {
         >
           <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/next.svg"
+              src="/sheron_nexus_logo.png"
               alt="Team collaborating at Sheron Nexus"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
