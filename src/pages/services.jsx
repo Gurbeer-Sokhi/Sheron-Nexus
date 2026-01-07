@@ -100,7 +100,7 @@ export default function ServicesPage() {
               className="order-1 flex justify-center md:order-2"
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image src="/eor.svg" alt="Employer of Record Services" fill className="object-cover" />
+                <Image src="/EOR.png" alt="Employer of Record Services" fill className="object-cover" />
               </div>
             </motion.div>
           </div>
@@ -127,7 +127,7 @@ export default function ServicesPage() {
               className="flex justify-center"
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image src="/hiring.svg" alt="Hiring Outsourcing" fill className="object-cover" />
+                <Image src="/HPO.png" alt="Hiring Outsourcing" fill className="object-cover" />
               </div>
             </motion.div>
 
@@ -212,7 +212,7 @@ export default function ServicesPage() {
               className="flex justify-center"
             >
               <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-                <Image src="/window.svg" alt="Tech Solutions" fill className="object-cover" />
+                <Image src="/TechSolution.png" alt="Tech Solutions" fill className="object-cover" />
               </div>
             </motion.div>
           </div>
