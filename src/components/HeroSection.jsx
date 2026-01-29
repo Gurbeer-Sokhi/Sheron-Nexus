@@ -61,15 +61,15 @@ export default function HeroSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={imageVariants}
-          className="flex justify-center md:justify-end"
+          className="flex justify-center items-center"
         >
-          <div className="relative aspect-[16/11] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
+          <div className="relative aspect-[16/11] w-full max-w-xl mx-auto overflow-hidden rounded-2xl shadow-lg bg-gray-50 dark:bg-gray-900">
             <Image
-              src="/Landing_cropped.png"
+              src="/Landing_page_dark_theme.png"
               alt="Team collaborating at Sheron Nexus"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-              className="object-cover"
+              className="object-contain object-center"
               priority
             />
           </div>

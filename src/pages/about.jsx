@@ -104,12 +104,12 @@ export default function AboutPage() {
               {
                 title: "Reliability",
                 desc: "We deliver consistent, dependable services that businesses can count on.",
-                icon: "/shield.svg",
+                icon: "/reliability.svg",
               },
               {
                 title: "Transparency",
                 desc: "Clear communication, honest processes, and full visibility at every step.",
-                icon: "/eye.svg",
+                icon: "/transparency.svg",
               },
               {
                 title: "Growth Mindset",
