@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import LeadForm from "@/components/LeadForm";
 import { Phone, Mail, MapPin, Calendar } from "lucide-react";
 import Button from "@/components/Button";
+import { CALENDLY_URL } from "@/constants/links";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 16 },
@@ -57,7 +58,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="shrink-0">
-                <a href="https://calendly.com/sheronnexus/30min" target="_blank" rel="noopener noreferrer">
+                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
                   <Button text="Open Calendly" variant="primary" ariaLabel="Open Calendly" className="hover:scale-105 active:scale-95" />
                 </a>
               </div>

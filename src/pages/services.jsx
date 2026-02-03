@@ -7,6 +7,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Button from "@/components/Button";
+import { CALENDLY_URL } from "../constants/links";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 16 },
@@ -300,7 +301,7 @@ export default function ServicesPage() {
             </Link>
 
             <a
-              href="https://calendly.com/your-calendly-link"
+              href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex"

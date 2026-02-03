@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { CALENDLY_URL } from "@/constants/links";
 // import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
@@ -55,7 +56,7 @@ export default function Navbar() {
               Contact Us
             </Link>
             <Link
-              href="https://calendly.com/sheronnexus/30min"
+              href={CALENDLY_URL}
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#8B5CF6] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/50"
             >
               Book a Call
@@ -126,7 +127,7 @@ export default function Navbar() {
               Contact Us
             </Link>
             <Link
-              href="https://calendly.com/your-calendly-link"
+              href={CALENDLY_URL}
               onClick={() => setIsOpen(false)}
               className="inline-flex items-center justify-center rounded-full bg-[#8B5CF6] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/50"
             >
