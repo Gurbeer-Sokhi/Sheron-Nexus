@@ -1,1 +1,1 @@
-export const CALENDLY_URL = "https://calendly.com/rajbeer-sokhi-sheronnexus/30min"
+export const CALENDLY_URL = "https://calendly.com/sheron-nexus/30min"
